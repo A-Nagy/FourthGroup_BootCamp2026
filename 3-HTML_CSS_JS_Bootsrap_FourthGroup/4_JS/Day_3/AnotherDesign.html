@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coolect Data In Cards </title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            padding: 20px;
+        }
+        .card{
+            padding: 10px;
+            border: 2px solid #7706e0;
+            border-radius: 20px;
+            background-color: #f9f9f9;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body >
+    <div>
+        <h2>Get From Static Data "List"</h2>
+        <section id="EmployeesSection"></section>
+        <script>
+            const sec= document.getElementById("EmployeesSection");
+            const team = 
+            [
+            { name: "Ali" , job: "Developer", city: "Riyadh" },
+            { name: "Sara", job: "Designer" , city: "Jeddah" },
+            { name: "Omar", job: "Manager"  , city: "Dammam" },
+            { name: "Lina", job: "Engineer" , city: "Makkah" }
+            ];
+            team.forEach(member=>{
+                const Card = document.createElement("div")
+                Card.className="card";
+                Card.innerHTML=`  <h2>${member.name}</h2>
+                                  <h3>${member.job}</h3>
+                                  <p>${member.city}</p>`;
+                sec.appendChild(Card);                  
+
+            });
+
+        </script>
+    </div>
+    <div>
+        <h2>Get From File</h2>
+        <button onclick="getData()">Get Data</button>
+        <section id="EMployeeEmail"></section>
+        <script>
+          async function getData()
+            {
+            const sect= document.getElementById("EMployeeEmail");
+           
+            const response =await fetch("./users.json");
+            const users = await response.json();
+
+            users.forEach(user=>
+            {
+                const newcard=document.createElement("div");
+                newcard.className="card";
+                newcard.innerHTML=`<h2>${user.name}</h2>
+                                   <h3>${user.email}</h3>`
+                    sect.appendChild(newcard);               
+
+            });
+
+            }
+
+        </script>
+    </div>
+   <!--  show data -->
+ 
+ <div>
+ <h2> show from API </h2>
+ <section id="section3API"></section>
+        <script>
+//  document.addEventListener("DOMContentLoaded", fromAPI());
+//  document.addEventListener("DOMContentLoaded",function(){
+//         fromAPI();
+//  })
+// window.onload=function()
+// {
+//    fromAPI();
+//  }
+           async function fromAPI(){
+               const sect = document.getElementById("section3API");
+               const resp  = await fetch("https://jsonplaceholder.typicode.com/users?utm_source=chatgpt.com");
+               const users = await resp.json();
+                sect.innerHTML="";
+             users.forEach(user => {
+             const Card = document.createElement("div");
+             Card.className = "card";
+        Card.innerHTML= 
+        `<h1>${user.name}</h1> 
+        <p>  ${user.email}</p> 
+        <p>  ${user.address.city}</p>   
+        `;
+        sect.appendChild(Card);
+    });
+            }//end fun
+        </script>
+    </div>
+
+    
+</body>
+</html>
+
+

@@ -1,0 +1,104 @@
+ <html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Answer Eng.Mshael</title>
+
+<style>    
+
+ body {
+
+    background-color: #f5f5f5;
+
+    font-family: Arial, sans-serif;
+
+}
+
+/* المكان اللي يحتوي كل الكروت */
+
+#write {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* كل منتج */
+
+.card {
+    background-color: antiquewhite;
+    border: 2px solid aquamarine;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* صورة المنتج */
+
+.card img {
+    width: 120px;
+    height: 150px;
+}
+
+/* اسم المنتج */
+
+.card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="write"> Fech data Assimnt</div>
+
+<button onclick="AAPPII()">press</button>
+
+<script>
+
+  async  function AAPPII(){
+
+    var content = document.getElementById("write");
+
+    var link =  await fetch("https://fakestoreapi.com/products");
+
+    var Users = await link.json();
+
+    content.innerHTML="";
+
+    // product title,price,imge (inside card in section )
+
+    Users.forEach(user => {
+
+        const Card = document.createElement("section");
+
+        Card.className="card";
+
+        Card.innerHTML=
+
+        `     <img src="${user.image}" width=100>    
+
+              <h3> ${user.price}</h3>
+
+              <h3> ${user.title}</h3>
+
+        `
+
+        content.appendChild(Card);
+
+    });
+
+    }
+
+</script>
+</body>
+</html>

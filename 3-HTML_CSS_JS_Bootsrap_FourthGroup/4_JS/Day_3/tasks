@@ -1,0 +1,4 @@
+
+ 
+### ✅ **Task 4 – Get Data from Public API**
+**Objective:** Use `fetch()` to get data from [https://fakestoreapi.com/products](https://fakestoreapi.com/products), and display each product (title, price, and image) inside a card layout in a section.

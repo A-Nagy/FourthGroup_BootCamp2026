@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops </title>
+    <style>
+        tbody
+        {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h2>List Of Number</h2>
+    <ul id="numberlist">
+
+    </ul>
+<script>
+    const list = document.getElementById("numberlist");
+    for(let c = 1 ; c <= 10 ; c++ )
+    {
+        const item = document.createElement("li");
+        item.textContent="Number : " + c; 
+        list.appendChild(item);
+    }
+</script>
+
+
+<h2>Example 2 </h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Number</th>
+            <th>Square</th>
+        </tr>
+    </thead>
+    <tbody id="NumberTable">
+        <tr>
+            <td>15</td>
+            <td>20</td>
+        </tr>
+    </tbody>
+</table>
+<script>
+     const Ntable = document.getElementById("NumberTable") ; 
+     for(let i = 1 ; i<=5 ; i ++)
+     {
+        const row = document.createElement("tr");
+        row.innerHTML=` <td>${i}</td>
+                        <td>${i*i}</td>` ; 
+        Ntable.appendChild(row);                
+     }
+
+</script>       
+
+<h2>Example 3 </h2>
+<table border="1"  id="EmployeeTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<script>
+    const Employees=[
+        {name: "Ahmad"  ,Salary: 2000 },
+        {name: "Mashael",Salary: 20000},
+        {name: "Hassan" ,Salary: 25000},
+    ]
+
+     const Etable = document.querySelector("#EmployeeTable tbody") ; 
+     for(let x = 0 ; x < Employees.length; x ++)
+     {
+        const row = document.createElement("tr");
+        row.innerHTML=` <td>${Employees[x].name}</td>
+                        <td>${Employees[x].Salary}</td>` ; 
+        Etable.appendChild(row);                
+     }
+
+</script>    
+
+
+</body>
+ 
+</html>

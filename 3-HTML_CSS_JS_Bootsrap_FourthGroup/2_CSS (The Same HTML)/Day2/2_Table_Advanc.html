@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table With Mage Cells</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table{
+
+        width: 100%;
+        margin: 5px auto;
+
+        }
+        th,td
+        {
+        border: 2px solid #0e7a29;
+        padding: 5px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 2px  #23aa44;
+        }
+       th
+       {
+        background-color: rgb(182, 180, 177);
+       }
+    </style>
+</head>
+<body>
+    <h2>Advance Table </h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Grade</th>
+        </tr>
+         <tr>
+            <td>ahmad</td>
+            <td>Math</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Omar</td>
+            <td>Java</td>
+            <td>85</td>
+        </tr>
+          <tr>
+            <td>Data Structure</td>
+            <td>75</td>
+        </tr>
+          <tr>
+            <td>OOP</td>
+            <td>90</td>
+        </tr>
+    </table>
+</body>
+</html>

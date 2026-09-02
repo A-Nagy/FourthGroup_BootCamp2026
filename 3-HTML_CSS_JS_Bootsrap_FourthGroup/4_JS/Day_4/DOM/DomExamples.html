@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="title"> Welcome to the Reailty</p>
+    <ul id="list">
+        <li>Item 1 </li>
+        <li id="item2">Item 2 </li>
+        <li>Item 3 </li>
+    </ul>
+    <div id="container"> <b> Hello JS </b> Dom</div>
+    <h2>Mirror</h2>
+    <h3>Write Any Thing</h3>
+    <input type="text" id="inputs">
+    <p>You Write : <span id="outputs"></span></p>
+
+</body>
+<script>
+
+
+
+const input  = document.getElementById("inputs");
+const output = document.getElementById("outputs");
+
+input.addEventListener("keyup", function(){
+    output.innerText=input.value; })
+
+    const div =document.getElementById("container");
+    console.log(div.innerHTML);
+    console.log(div.innerText);
+    console.log(div.textContent);
+
+    const div2=document.createElement("div");
+    div2.innerText = "Secand Div";
+    document.getElementById("container").appendChild(div2);
+
+    const title = document.querySelector(".title");
+    title.innerText = "Hello";
+
+    const list = document.getElementById("list");
+    const itemtoremove = document.getElementById("item2");
+    list.removeChild(itemtoremove);
+
+    console.log(list.parentNode);
+
+    console.log(list.children);
+
+    console.log(list.previousElementSibling);
+
+    console.log(list.nextElementSibling);
+    
+    console.log(list.lastChild);
+
+</script>
+</html>

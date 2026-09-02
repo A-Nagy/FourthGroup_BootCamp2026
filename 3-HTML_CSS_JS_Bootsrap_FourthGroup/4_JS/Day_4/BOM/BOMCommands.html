@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom Commands</title>
+</head>
+<body>
+    <h2>Info </h2>
+    <ul id="info"></ul>
+    <p id="screen"></p>
+    <button onclick="GoForward()">=></button>
+    <h2>Controls</h2>
+       <button onclick="showAlert()">Alert</button>
+       <button onclick="GotoGoogle()">Google</button>
+       <button onclick="OpenNewTap()">New Tap</button>
+<p id="timeout"></p>
+<p id="interval"></p>
+
+ <script>
+    let cout= 0 ;
+    setInterval(()=>{
+        document.getElementById("interval").innerText = `لقد مر منذ التنفيذ ${++cout}`
+    },1000)
+    setTimeout(()=>{
+       document.getElementById("timeout").innerText = 'Boooom';
+    },5000)
+        const myinfo= document.getElementById("info");
+        const items = [
+            `Browser Name :${navigator.appName}` ,   
+            ` Browser Version :${navigator.appVersion}`, 
+            ` OS : ${navigator.platform}`,
+            `Lang : ${navigator.language}`
+        ];
+        items.forEach(item=>{
+            const li = document.createElement("li");
+            li.innerText=item;
+            myinfo.appendChild(li);
+        });
+
+        const screeninto = document.getElementById("screen");
+        screeninto.innerText=
+        `Screen Width : ${screen.width} \n
+         Screen height: ${screen.height}`;
+function GoForward()
+    { 
+    history.forward()
+    }
+  function  showAlert(){
+    alert("HAHAHAHHAHAHHAHAH \n It's Not Html it's Js");
+  }
+  function  GotoGoogle()
+  {
+    location.href="https://www.Google.com";
+   }
+  function  OpenNewTap()
+  {
+    window.open("https://example.com", "_blank");
+  }
+
+
+    </script>
+</body>
+</html>

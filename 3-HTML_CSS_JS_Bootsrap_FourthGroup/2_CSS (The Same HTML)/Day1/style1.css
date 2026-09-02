@@ -1,0 +1,85 @@
+body
+{
+    background-color: rgb(159, 25, 159);
+    color: rgb(245, 241, 241);
+    text-align: center;
+
+}
+h1,h4 , h5 , h6{
+    color: rgb(44, 17, 224);
+}
+h2{
+    color: rgb(0, 0, 0);
+}
+h3{
+    color: rgb(0, 0, 0);
+}
+p
+{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.6;
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    border: 3px double #120990;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 5px 10px;
+    display: block;
+}
+a:hover{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(205, 211, 216);
+    border: 3px double #900909;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px 15px;
+ 
+}
+img
+{
+    margin-top: 50px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid blue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #1c1b1b;
+
+}
+img:hover
+{
+    transform: scale(1.5);
+}
+u{
+    text-decoration: underline;
+    color: #250ad1;
+
+}
+ 
+ 
+.PageBottom
+{
+   color: rgb(5, 5, 5); 
+   text-align: left;
+   border: 2px solid red;
+}
+.highlite{    
+    background-color: rgb(3, 19, 196);
+    border-radius: 8px;
+}
+.FocusIm
+{
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(13, 0, 255);   
+}
+#FirstHeader
+{
+    color: red;
+}

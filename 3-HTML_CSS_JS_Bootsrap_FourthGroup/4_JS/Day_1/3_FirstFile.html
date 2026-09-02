@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        body
+        {
+            font-family:  Tahoma ;
+            padding: 30px;
+            color: brown;
+        }
+        .output
+        {
+            margin-top: 20px;
+            padding: 10px;
+            color: white;
+            background-color: blue;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Variables</h1>
+    <label  for="userinput">User Name: </label>
+    <input  type="text" id="username">
+    <br>
+    
+    <button type="button" onclick="displayinput()">Write Name </button>
+
+    <div id="result" class="output"></div>
+    
+    <script>
+        function displayinput()
+        {
+            let name = document.getElementById("username").value;
+            if(name.trim()==="")
+            {
+                document.getElementById("result").innerText="pls Enter User Name ";
+            }
+            else
+            {
+                document.getElementById("result").innerText=`Welcome ${name}` ;
+
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUTS</title>
+    <link rel="stylesheet" href="../Day2/style.css">
+</head>
+<body>
+    <form>
+        <label for="name">Name :</label>
+        <input type="text" name="name" id="name" required minlength="3" >
+        <br>
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="phone">Phone : </label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{11}" title="قم باضافة رقم الهاتف المكون من 11 رقم ">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required minlength="6">
+        <br>
+        <label for="color">Color : </label>
+        <input type="color" name="color" id="color">
+        <br>
+        <label for="bd">BirthDate :</label>
+        <input type="date" name="bd" id="bd">
+        <br>
+        <label for="range">Range</label>
+        <input type="range" name="range" id="range" min="0" max="100">
+        <br>
+        <label for="number">Count Of Items : </label>
+        <input type="number" name="count" id="count" min="0" max="100">
+        <br>
+        <label for="upload">Upload File: </label>
+        <input type="file" name="upload" id="upload">
+        <br>
+        <h3>Choose Gender</h3>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label>
+        <br>
+         <h3>Choose Hobbies</h3>
+        <input type="checkbox" name="reading" value="reading" id="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" name="codeing" value="codeing" id="codeing">
+        <label for="codeing">Coding</label>
+        <input type="checkbox" name="sports" value="sports" id="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" name="hacks" value="hacks" id="hacks">
+        <label for="hacks">Hacks</label>
+        <br>
+        <h3>Drop Down list Select</h3>
+        <label for="coutry1">Choose Country</label>
+        <select name="coutry1" id="coutry1">
+            <option value="noValue" >Choose Country</option>
+            <option value="egypt">مصر</option>
+            <option value="KSA">السعودية</option>
+            <option value="UAE">الامارات</option>
+        </select>
+        <br>
+        <br>
+        <h3>Drop Down list DataList </h3>
+        <label for="coutry">Choose Country</label>
+        <input list="coutry">
+        <datalist   id="coutry">
+            <option value="egypt">مصر</option>
+            <option value="KSA">السعودية</option>
+            <option value="UAE">الامارات</option>
+        </datalist>
+        <br>
+        <button type="submit">Sublit</button>
+    </form>
+    
+</body>
+</html>

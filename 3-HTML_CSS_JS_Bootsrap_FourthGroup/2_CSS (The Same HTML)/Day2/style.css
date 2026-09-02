@@ -1,0 +1,147 @@
+
+/* تنسيق عناصر HTML5 الهيكلية */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #fdfdfd;
+    color: #222;
+    line-height: 1.8;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+header, footer {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav ul 
+{
+    list-style-type: none;
+    display: flex;
+    text-align: left;
+}
+nav a , nav ul li a 
+{   color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 10px;
+}
+nav a:hover , nav ul li a:hover
+{
+    background-color:white ;
+    color: #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+ 
+main {
+    padding: 20px;
+}
+ 
+section, article, aside {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+header h1 
+{
+    color: white;
+}
+h1
+{
+    color: #333;
+}
+h2 , h3 
+{
+    color: #e20c0c;
+    margin-top: 15px;
+}
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 5px auto;
+}
+th,td
+{
+    border: 1px solid red;
+    padding: 10px;
+}
+th
+{
+    background-color: #cdaeae;
+    font-size: large;
+}
+form
+{
+    background-color: #eee;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px  #a19e9e;;
+}
+input, textarea, select
+{
+    width: 95%;
+    display: block;
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #a69c9c;
+    border-radius: 5px;
+}
+input:focus , textarea:focus , select:focus
+{
+    transform: scale(1.05);
+    background-color: #2b7ff6;
+    outline: none;
+    border-color: #f68c8c;
+    font-size: large;
+    color: white;
+}
+label
+{
+    display: ;
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+}
+button
+{
+    background-color: #4caf59;
+    color :#fafafa;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 15px;
+    cursor: pointer;
+}
+button:hover
+{
+    background-color: #00796b;
+    transform: scale(1.1);
+}
+img , video , audio , iframe
+{
+    display: block;
+    margin: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #000;
+}
+img:hover , video:hover , audio:hover , iframe:hover
+{
+    transform: scale(1.1);
+}
+/*
+.links
+{
+    color: #e20c0c;
+}
+*/

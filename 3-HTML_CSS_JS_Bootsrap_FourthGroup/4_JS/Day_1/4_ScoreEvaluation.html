@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: Arial;
+            padding: 20px;
+        }
+        label{
+            font-weight: bold;
+            font-size: larger;
+        }
+        input
+        {
+            padding: 20px;
+            color: brown;
+            border-radius: 15px;
+            border: 2px solid #56dceb;
+            box-shadow:  0 0 5px #3ba2ae;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .output
+        {
+            color: blue;
+            margin-top: 15px;
+            padding: 25px;
+            background-color: rgb(245, 232, 215);
+            border-radius: 10px;
+              font-size: 18px;
+            font-weight: bold;
+        }
+        button
+        {
+            border-radius: 25px;
+            background-color: rgb(60, 208, 208);
+            color: white;
+            border: none;
+            padding: 20px;
+            font-weight: bold;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h2>Task 2 Evaluate Score </h2>
+    <label  for="scoreinput">Enter Your Score : </label>
+    <input  type="number" min="0" max="100" id="scoreinput">
+    <br>
+    <button type="button" onclick="CheckScore()">Check Result </button>
+
+    <div id="dresult" class="output"></div>
+<script>
+ function CheckScore()
+ {
+    const score = parseFloat(document.getElementById("scoreinput").value);
+    let result = "";
+    if(isNaN(score))
+    {
+        result = "pls Enter a Valid Score ." ; 
+    }
+    else if(score>=90)
+    {
+        result = "Excellent";
+    }
+    else if(score>=70)
+    {
+         result = "Good Job";
+    }
+    else
+    {
+           result = "keep Trying";
+    }
+
+    document.getElementById("dresult").innerText = result;
+ }   
+</script>
+</body>
+</html>
+ 

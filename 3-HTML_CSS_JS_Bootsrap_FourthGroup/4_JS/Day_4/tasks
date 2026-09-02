@@ -1,0 +1,38 @@
+
+
+
+### ✅ Task 1 – Live Character Counter
+As the user types in a textarea, show how many characters remain out of 100.
+
+### ✅ Task 2 – Dynamic Form Validation
+Validate name, email, and phone number fields. Show errors if any field is empty or invalid.
+
+### ✅ Task 3 – Filter List on Search
+Display a list of names. When the user types in a search box, show only matching names.
+
+### ✅ Task 4 – Add and Remove Items Dynamically
+Allow the user to add an item to a list and remove it using a delete button next to each item.
+
+### ✅ Task 5 – Toggle FAQ Questions
+Clicking on a question toggles visibility of the answer using class toggle.
+
+
+
+
+
+
+
+### `8.Dynamic Menu Page with Category Filter`
+**Objective:** Display a dynamic food menu with the ability to filter items by category (e.g., Breakfast, Lunch, Shakes).
+
+**Skills Gained:**
+- Use of `array.filter()` or manual loops to show data based on user interaction
+- Template rendering with `replace`
+- Handling button clicks with `onclick`
+- Working with structured JavaScript objects
+
+**Files Used:**
+- `our-menu.html` – HTML structure for the menu page
+- `our-menu.css` – Styling for layout, cards, and filter buttons
+- `our-menu.js` – Script that loops over menu items and filters them dynamically
+---

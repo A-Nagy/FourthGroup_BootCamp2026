@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks Answer</title>
+    <style>
+        .answer{
+            font-size: 14px;
+            color: blueviolet;
+            display: none;
+        }
+        .question{
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Task 1</h2>
+        <textarea name="message" id="message" maxlength="100" rows="5" cols="30"></textarea>
+        <p id="Counter"></p>
+        <script>
+            const counter = document.getElementById("Counter");
+            const message = document.getElementById("message");
+            message.addEventListener("input", () => { 
+            counter.innerHTML= 100 - message.value.length ;});
+        </script>
+    </div>
+
+    <div>
+        <h2>Task 2</h2>
+        <form id="Myform">
+            <input type="text"  id="name"     placeholder="Enter Name"> <br>
+            <input type="email" id="email"    placeholder="Enter Email"> <br>
+            <input type="tel"   id="phone"    placeholder="Enter Phone" minlength="11"> <br>
+            <button type="submit">Submit</button>
+            <p id="errmsg" style="color: brown;"></p>
+        </form>
+        <script>
+            document.getElementById("Myform").addEventListener("submit",function(e){
+                e.preventDefault();
+                const name   = document.getElementById("name").value.trim();
+                const email  = document.getElementById("email").value.trim();
+                const phone  = document.getElementById("phone").value.trim();
+                const errmsg = document.getElementById("errmsg");
+        
+            if( !name || !email || !phone)
+            {                 
+                errmsg.innerText="All Data Is Required" ; 
+            }
+            else
+            {           
+
+                 errmsg.innerText="" ;
+                 alert('Thanx...\nForm Submitted') 
+            }
+                });
+        </script>
+
+    </div>
+
+    <div>
+        <h2>Task 3 </h2>
+        <input type="text" id="search" placeholder="Search Names...">
+        <ul id="nameList">
+            <li>Mashael</li>
+            <li>Mashael</li>
+            <li>Hassan</li>
+            <li>Fatimah</li>
+            <li>Ahmad</li>
+            <li>zizo</li>
+        </ul>
+    <script>
+        const search = document.getElementById("search");
+        const names  = document.querySelectorAll("#nameList li");
+
+        search.addEventListener('input', ()=>{
+        const query = search.value.toLowerCase();
+        names.forEach(name=>{
+        name.style.display = name.textContent.toLocaleLowerCase().includes(query)?'block':'none'
+            })
+        });
+    </script>
+    </div>
+
+    <div>
+    <h2>task 4</h2> 
+    <input type="text" id="iteminput" placeholder="Add Item">
+    <button onclick="additem()">Add</button>
+    <ul id="listitems" ></ul>
+    <script>
+        function additem()
+        {
+            const input = document.getElementById("iteminput");
+            if(input.value.trim()!=="")
+            {
+                const li = document.createElement("li");
+                li.textContent=input.value+" ";
+                const btn = document.createElement("button");
+                btn.textContent="Delete"; 
+                btn.onclick=()=> li.remove();
+                li.appendChild(btn);
+                document.getElementById("listitems").appendChild(li);
+                input.value="";
+            }
+        }
+    </script>
+    </div>
+    <div>
+        <h2>task5</h2>
+        <div>
+            <div class="question">What is JavaScript?</div>
+            <div class="answer">JavaScript is a programming language used for web development.</div>
+            <div class="question">What is DOM?</div>
+            <div class="answer">DOM stands for Document Object Model.</div>
+        </div>
+        <script>
+            document.querySelectorAll(".question").forEach(q=>{
+                q.addEventListener("click",()=>{
+                    const answer =q.nextElementSibling;
+                    answer.classList.toggle('answer');
+                    answer.style.display=answer.style.display==='block'?'none':'block' ;                          
+                        });
+                });
+        </script>
+    </div>
+    
+</body>
+</html>

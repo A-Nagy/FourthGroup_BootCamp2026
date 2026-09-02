@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <style>
+        .highlight{
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Task 1 </h1>
+        <p id="paragraph"> Click Button To Toggle Highlight</p>
+        <button id="btn" >High light Toggle</button>
+        <script>
+    document.getElementById("btn").
+    addEventListener("click",()=>{
+    document.getElementById("paragraph").classList.toggle("highlight");
+ });
+     
+        </script>
+    </div>
+    <div>
+        <h2>task 2 </h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="studenttable"></tbody>
+        </table>
+  
+        <script>
+            const tbody = document.getElementById("studenttable");
+            const students = [
+                { name: "Ali", grade: 90 },
+                { name: "Sara", grade: 85 },
+                { name: "Omar", grade: 78 }
+                ];
+                students.forEach(student=>{
+                    const row = document.createElement("tr");
+                    row.innerHTML=`<td>${student.name}</td>
+                                   <td>${student.grade}</td>`;
+                    tbody.appendChild(row);               
+                });
+        </script>
+    </div>
+</body>
+</html>
