@@ -1,0 +1,34 @@
+﻿@model List<Employee>
+
+
+@{
+    ViewData["Title"] = "Employees";
+}
+
+<h1 class="text-center">Employees Mangment</h1>
+
+ 
+<table class="table table-bordered" >
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Salary</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.Name</td>
+                <td>@employee.Email</td>
+                <td>@employee.Address</td>
+                <td>@employee.Salary</td>
+                <td>@employee.Phone</td>
+            </tr>
+        }
+    </tbody>
+    </table>
+    <a asp-action="Create" class="btn btn-success">Add Employee</a>
