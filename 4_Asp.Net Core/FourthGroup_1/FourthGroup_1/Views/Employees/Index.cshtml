@@ -1,4 +1,4 @@
-﻿@model List<Employee>
+﻿@model IEnumerable<Employee>
 
 
 @{
@@ -16,6 +16,7 @@
             <th>Address</th>
             <th>Salary</th>
             <th>Phone</th>
+            <th>Department</th>
         </tr>
     </thead>
     <tbody>
@@ -27,8 +28,15 @@
                 <td>@employee.Address</td>
                 <td>@employee.Salary</td>
                 <td>@employee.Phone</td>
+                <td>@employee.Department?.Name</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@employee.Id" class="btn btn-secondary">Details</a>
+                    <a asp-action="Update"  asp-route-id="@employee.Id" class="btn btn-warning">Edit</a>
+                    <a asp-action="Delete"  asp-route-id="@employee.Id" class="btn btn-danger">Delete</a>
+                </td>
             </tr>
         }
     </tbody>
     </table>
     <a asp-action="Create" class="btn btn-success">Add Employee</a>
+    <a asp-action="Search" class="btn btn-outline-dark">Search</a>

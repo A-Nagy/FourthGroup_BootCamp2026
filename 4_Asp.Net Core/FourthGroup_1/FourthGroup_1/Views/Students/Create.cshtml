@@ -1,0 +1,27 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "Add Student";
+}
+<h1 class="text-center">@ViewData["Title"]</h1>
+
+<form asp-action="Create" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label>Student ID : </label>
+        <input asp-for="id" type="text" name="id" id="id" placeholder="Enter Student id" />
+        <span asp-validation-for="id" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+    <label>Student Name : </label>
+    <input asp-for="Name" type="text" name="name" id="name" placeholder="Enter Student Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+        <div class="mb-3">
+    <label>Student Age</label>
+    <input asp-for="Age" type="number" name="age" id="age" placeholder="Enter Student age" />
+        <span asp-validation-for="Age" class="text-danger"></span>
+        </div>
+    <button type="submit" class="btn btn-success">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Student Page</a>
+</form>

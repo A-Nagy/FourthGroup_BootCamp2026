@@ -4,7 +4,7 @@
 }
 <h1 class="text-center">Add Employee</h1>
 
-<form action="Create" method="post">
+<form asp-action="Create" method="post">
 
     <label>Employee Name : </label>
     <input asp-for="Name" type="text" name="Name" id="Name" placeholder="Enter Employee Name" />
@@ -25,6 +25,12 @@
     <label>Employee Salary</label>
     <input asp-for="Salary" type="number" name="Salary" id="Salary" title="Enter Salary Between 3000 and 10000" max="10000" min="3000" />
     <br />    <br />
-    <button type="submit" class="btn btn-success">Save</button>
+    <label>Employee Department</label>
+    <select asp-for="DepartmentId" asp-items="ViewBag.DepartmentList" class="form-select">
+        <option value="">--Select Departments--</option>
+    </select>
+    <br />    <br />
 
+    <button type="submit" class="btn btn-success">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Employees Page</a>
 </form>

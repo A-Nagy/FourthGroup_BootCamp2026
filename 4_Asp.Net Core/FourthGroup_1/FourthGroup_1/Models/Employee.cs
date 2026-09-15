@@ -21,5 +21,10 @@ namespace FourthGroup_1.Models
         [Required]
         [Range(3000,10000, ErrorMessage = "Salary must be between 3000 and 10000 SR")] //range attribute is used to specify the range of the property
         public double Salary { get; set; }
+
+        public int? DepartmentId { get; set; }
+        //navigation Property
+        public Department? Department { get; set; }
+
     }
 }

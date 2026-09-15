@@ -1,0 +1,22 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "Update Student";
+}
+<h1 class="text-center">@ViewData["Title"]</h1>
+
+<form asp-action="Update" method="post">
+
+    <label>Student ID : </label>
+    <input asp-for="id" type="text" name="id" id="id" placeholder="Enter Student id" />
+    <br />    <br />
+
+    <label>Student Name : </label>
+    <input asp-for="Name" type="text" name="name" id="name" placeholder="Enter Student Name" />
+    <br />    <br />
+
+    <label>Student Age</label>
+    <input asp-for="Age" type="number" name="age" id="age" placeholder="Enter Student age" />
+    <br />    <br />
+    <button type="submit" class="btn btn-warning">Update</button>
+    <a asp-action="Index" class="btn btn-secondary">Student Page</a>
+</form>

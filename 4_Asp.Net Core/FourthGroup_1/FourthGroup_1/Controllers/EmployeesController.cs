@@ -1,6 +1,8 @@
 ﻿using FourthGroup_1.Data;
 using FourthGroup_1.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace FourthGroup_1.Controllers
 {
@@ -51,22 +53,114 @@ namespace FourthGroup_1.Controllers
             //return View(employeelist);
 
             // ToList() Mean Select * 
-            List<Employee> employees = _dbContext.Employees.ToList();
+            // Include() 
+            IEnumerable<Employee> employees = _dbContext.Employees.Include(e=>e.Department).ToList();
             return View(employees);
+        }
+    
+        [HttpGet]
+        public IActionResult Details(int Id)
+        {
+            Employee? emp = _dbContext.Employees.Find(Id);
+
+            if (emp == null)
+            {
+                //Error 404 Not Found  
+                return NotFound();
+            }
+            return View(emp);
         }
 
         [HttpGet]
         public IActionResult Create() 
         {
+            LoadDepartments();
             return View(); 
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(Employee emp)
         {
+            if(!ModelState.IsValid)
+            {
+                return View(emp);
+            }
             _dbContext.Employees.Add(emp);
             _dbContext.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public IActionResult Update(int Id)
+        { Employee? emp = _dbContext.Employees.Find(Id);
+           
+            if (emp == null)
+            {   
+                //Error 404 Not Found  
+                return NotFound();
+            }
+            return View(emp);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Update(Employee emp)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(emp);
+            }
+            _dbContext.Employees.Update(emp);
+            _dbContext.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int Id)
+        {
+            Employee? emp = _dbContext.Employees.Find(Id);
+
+            if (emp == null)
+            {
+                //Error 404 Not Found  
+                return NotFound();
+            }
+            return View(emp);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(Employee emp)
+        {
+            _dbContext.Employees.Remove(emp);
+            _dbContext.SaveChanges();
+            return RedirectToAction("Index");
+        }
+       
+        [HttpGet]
+        public IActionResult Search()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Search(Employee emp)
+        {
+            Employee? employee = _dbContext.Employees.FirstOrDefault(e => e.Phone == emp.Phone);
+            if (employee == null) 
+            {
+                return NotFound();
+            }
+            return RedirectToAction("Details", new { Id = employee.Id });
+        }
+
+        private void LoadDepartments() 
+        {
+            IEnumerable<Department> departments = _dbContext.Departments.ToList();
+            ViewBag.DepartmentList = new SelectList(departments, "Id", "Name");
+        }
+
     }
 }
