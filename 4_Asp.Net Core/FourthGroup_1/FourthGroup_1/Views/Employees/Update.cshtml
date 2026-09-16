@@ -26,9 +26,10 @@
     <input asp-for="Salary" type="number" name="Salary" id="Salary" title="Enter Salary Between 3000 and 10000" max="10000" min="3000" />
     <br />    <br />
 
-    <label>Employee Department : </label>
-    <input asp-for="DepartmentId" type="number" name="DepartmentId" id="DepartmentId"  />
-    <br />    <br />
+    <label>Employee Department</label>
+    <select asp-for="DepartmentId" asp-items="ViewBag.DepartmentList" class="form-select">
+        <option value="">--Select Departments--</option>
+    </select>
 
     <button type="submit" class="btn btn-warning">Update</button>
     <a asp-action="Index" class="btn btn-secondary">Employees Page</a>

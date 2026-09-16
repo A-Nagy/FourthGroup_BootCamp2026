@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.Identity.Client;
+using System.ComponentModel.DataAnnotations;
 
 namespace FourthGroup_1.Models
 {
@@ -10,5 +11,7 @@ namespace FourthGroup_1.Models
         [StringLength(200)]
         public string Name { get; set; }= string.Empty;
         public string ? Description { get; set; }
+        
+        public ICollection<Category>? Categories { get; set; }
     }
 }

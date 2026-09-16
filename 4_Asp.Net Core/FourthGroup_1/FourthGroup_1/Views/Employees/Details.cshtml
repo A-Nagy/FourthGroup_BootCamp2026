@@ -26,8 +26,9 @@
     <input asp-for="Salary" type="number" name="Salary" id="Salary" title="Enter Salary Between 3000 and 10000" max="10000" min="3000" disabled />
     <br />    <br />
     <label>Employee Department</label>
-    <input asp-for="DepartmentId" type="number" name="DepartmentId" id="DepartmentId" />
+    <input asp-for="Department.Name" type="text" name="DepartmentId" id="DepartmentId" />
     <br />    <br />
+     
 
     <a asp-action="Update" asp-route-Id="@Model.Id"  class="btn btn-warning">Update</a>
     <a asp-action="Delete" asp-route-Id="@Model.Id" class="btn btn-danger">delete</a>

@@ -61,7 +61,7 @@ namespace FourthGroup_1.Controllers
         [HttpGet]
         public IActionResult Details(int Id)
         {
-            Employee? emp = _dbContext.Employees.Find(Id);
+            Employee? emp = _dbContext.Employees.Include(e => e.Department).First(e=>e.Id==Id);
 
             if (emp == null)
             {
@@ -100,6 +100,7 @@ namespace FourthGroup_1.Controllers
                 //Error 404 Not Found  
                 return NotFound();
             }
+            LoadDepartments();
             return View(emp);
         }
 

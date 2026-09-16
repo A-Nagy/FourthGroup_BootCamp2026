@@ -100,6 +100,70 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Permissions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzc2lvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Permissions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzc2lvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Permissions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzc2lvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Permissions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzc2lvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Permissions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzc2lvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Roles/AssignPermissions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQXNzaWduUGVybWlzc2lvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Roles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Roles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Roles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Roles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [H:/Bootcamp/4-FourthGroup_BootCamp2026/4_Asp.Net Core/FourthGroup_1/FourthGroup_1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
