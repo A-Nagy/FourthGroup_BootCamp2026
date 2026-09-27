@@ -8,6 +8,7 @@
 
 <h1>Assign Permissions</h1>
 <h2>@Model.Name Permissions : </h2>
+
 <form asp-action="AssignPermissions" method="post">
     <input type="hidden" name="Id" value="@Model.Id" />
     @foreach (var permission in permissions)

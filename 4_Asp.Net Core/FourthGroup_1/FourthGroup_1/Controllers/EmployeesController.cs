@@ -1,11 +1,14 @@
 ﻿using FourthGroup_1.Data;
 using FourthGroup_1.Models;
+using FourthGroup_1.Security;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace FourthGroup_1.Controllers
 {
+    [Authorize]
     public class EmployeesController : Controller
     {
         private readonly AppDbContext _dbContext;
@@ -13,7 +16,9 @@ namespace FourthGroup_1.Controllers
         {
             _dbContext = dbContext;
         }
+
         [HttpGet]
+        [Authorize(Policy =PermissionsNames.EmployeeView)]
         public IActionResult Index()
         {
             //List<Employee> employeelist = new List<Employee>();
@@ -70,7 +75,7 @@ namespace FourthGroup_1.Controllers
             }
             return View(emp);
         }
-
+        [Authorize(Policy =PermissionsNames.EmployeeCreate)]
         [HttpGet]
         public IActionResult Create() 
         {
@@ -92,6 +97,7 @@ namespace FourthGroup_1.Controllers
         }
 
         [HttpGet]
+        [Authorize(Policy =PermissionsNames.EmployeeEdit)]
         public IActionResult Update(int Id)
         { Employee? emp = _dbContext.Employees.Find(Id);
            

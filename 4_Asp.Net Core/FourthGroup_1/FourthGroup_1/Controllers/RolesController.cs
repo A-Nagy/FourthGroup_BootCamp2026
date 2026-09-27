@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FourthGroup_1.Data;
 using FourthGroup_1.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FourthGroup_1.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class RolesController : Controller
     {
         private readonly AppDbContext _context;
@@ -158,6 +160,7 @@ namespace FourthGroup_1.Controllers
         public IActionResult AssignPermissions(int Id) 
         {
             Role? role= _context.Roles.Include(r => r.Permissions).FirstOrDefault(r=>r.Id== Id);
+            
             if (role == null) 
             {
                 return NotFound();

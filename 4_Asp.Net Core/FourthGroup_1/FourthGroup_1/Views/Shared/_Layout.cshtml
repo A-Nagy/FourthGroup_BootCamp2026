@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using FourthGroup_1.Security
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -34,6 +35,33 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Index">Categories</a>
                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Index">Users</a>
+                        </li>
+                         <li class="nav-item">
+                            @if (User.HasClaim(PermissionsNames.ClaimType, PermissionsNames.RoleDelete))
+                            {
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Roles" asp-action="Index">Roles</a>
+
+                            }
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Permissions" asp-action="Index">Permissions</a>
+                        </li>
+                        <li class="nav-item">
+                            @if (User.Identity != null && User.Identity.IsAuthenticated)
+                            {
+                
+                                <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                                    <button type="submit" class="btn btn-link nav-link"> Logout</button>
+                                    <span class="navbar-text d-inline"> Hello @User.Identity.Name</span>
+                                </form>
+                                
+                            }
+                           
+                        </li>
+
+
                     </ul>
                 </div>
             </div>

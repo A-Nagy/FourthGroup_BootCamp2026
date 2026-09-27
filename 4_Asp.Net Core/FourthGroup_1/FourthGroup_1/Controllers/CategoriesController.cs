@@ -22,7 +22,21 @@ namespace FourthGroup_1.Controllers
         // GET: Categories
         public IActionResult Index()
         {
+          //  return Content(_context.Categories.Find(2).Name);
+
             return View( _context.Categories.ToList());
+        }
+        // Content    : Text
+        // View       : Interface
+        // Not Found  : Error Interface
+        // Ok         : Data AS Api 
+        // Bad Request: Error Api
+        // RedirectTo Action : Data From Anther Action
+        public IActionResult GetAllCateories()
+        {
+            //  return Content(_context.Categories.Find(2).Name);
+
+            return Ok(_context.Categories.ToList());
         }
 
         // GET: Categories/Details/5
