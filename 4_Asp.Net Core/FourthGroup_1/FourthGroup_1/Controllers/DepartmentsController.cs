@@ -1,5 +1,6 @@
 ﻿using FourthGroup_1.Data;
 using FourthGroup_1.Models;
+using FourthGroup_1.Repositories.Base;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -15,28 +16,30 @@ namespace FourthGroup_1.Controllers
     public class DepartmentsController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IRepository<Department> _repository;
 
-        public DepartmentsController(AppDbContext context)
+        public DepartmentsController(AppDbContext context, IRepository<Department> repository)
         {
             _context = context;
+            _repository = repository;
         }
 
         // GET: Departments
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Departments.ToListAsync());
+        public IActionResult Index()
+        {   /*await _context.Departments.ToListAsync()*/
+            return View(_repository.GetAll());
         }
 
         // GET: Departments/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
-
-            var department = await _context.Departments
-                .FirstOrDefaultAsync(m => m.Id == id);
+            //await _context.Departments
+            //                .FirstOrDefaultAsync(m => m.Id == id);
+            var department = _repository.GetById(id);
             if (department == null)
             {
                 return NotFound();

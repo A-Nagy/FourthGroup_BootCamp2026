@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Persistence\Configrations\" />
+    <Folder Include="Persistence\Migrations\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CompanyMangment.Application\CompanyMangment.Application.csproj" />
+    <ProjectReference Include="..\CompanyMangment.Domain\CompanyMangment.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

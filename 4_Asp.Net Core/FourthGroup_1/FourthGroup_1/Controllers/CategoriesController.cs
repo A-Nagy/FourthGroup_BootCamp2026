@@ -7,16 +7,20 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FourthGroup_1.Data;
 using FourthGroup_1.Models;
+using FourthGroup_1.Repositories.Base;
 
 namespace FourthGroup_1.Controllers
 {
     public class CategoriesController : Controller
     {
-        private readonly AppDbContext _context;
+       // private readonly AppDbContext _context;
+       private readonly IRepository<Category> _categoryRepository;
 
-        public CategoriesController(AppDbContext context)
+        public CategoriesController(AppDbContext context,  IRepository<Category> categoryRepository)
         {
-            _context = context;
+           // _context = context;
+           _categoryRepository = categoryRepository;
+
         }
 
         // GET: Categories
@@ -24,7 +28,7 @@ namespace FourthGroup_1.Controllers
         {
           //  return Content(_context.Categories.Find(2).Name);
 
-            return View( _context.Categories.ToList());
+            return View(_categoryRepository.GetAll());
         }
         // Content    : Text
         // View       : Interface
@@ -32,23 +36,23 @@ namespace FourthGroup_1.Controllers
         // Ok         : Data AS Api 
         // Bad Request: Error Api
         // RedirectTo Action : Data From Anther Action
-        public IActionResult GetAllCateories()
-        {
-            //  return Content(_context.Categories.Find(2).Name);
+        //public IActionResult GetAllCateories()
+        //{
+        //    //  return Content(_context.Categories.Find(2).Name);
 
-            return Ok(_context.Categories.ToList());
-        }
+        //    return Ok(_context.Categories.ToList());
+        //}
 
         // GET: Categories/Details/5
-        public IActionResult Details(int? id)
+        public IActionResult Details(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var category =  _context.Categories
-                .FirstOrDefault(m => m.Id == id);
+            var category = _categoryRepository.GetById(id);
+              
             if (category == null)
             {
                 return NotFound();
@@ -72,22 +76,23 @@ namespace FourthGroup_1.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(category);
-                 _context.SaveChanges();
+                _categoryRepository.Add(category);
+                //_context.Add(category);
+                // _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
         }
 
         // GET: Categories/Edit/5
-        public IActionResult Edit(int? id)
+        public IActionResult Edit(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var category =  _context.Categories.Find(id);
+            var category = _categoryRepository.GetById(id);
             if (category == null)
             {
                 return NotFound();
@@ -111,19 +116,20 @@ namespace FourthGroup_1.Controllers
             {
                 try
                 {
-                    _context.Update(category);
-                     _context.SaveChanges();
+                    _categoryRepository.Update(category);
+                    //_context.Update(category);
+                    // _context.SaveChanges();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CategoryExists(category.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    //if (!CategoryExists(category.Id))
+                    //{
+                    //    return NotFound();
+                    //}
+                    //else
+                    //{
+                    //    throw;
+                    //}
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -131,15 +137,14 @@ namespace FourthGroup_1.Controllers
         }
 
         // GET: Categories/Delete/5
-        public IActionResult Delete(int? id)
+        public IActionResult Delete(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
-
-            var category =  _context.Categories
-                .FirstOrDefault(m => m.Id == id);
+            //_context.Categories.FirstOrDefault(m => m.Id == id);
+            var category = _categoryRepository.GetById(id);
             if (category == null)
             {
                 return NotFound();
@@ -153,19 +158,20 @@ namespace FourthGroup_1.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
         {
-            var category =  _context.Categories.Find(id);
+            var category = _categoryRepository.GetById(id);
             if (category != null)
             {
-                _context.Categories.Remove(category);
+                //_context.Categories.Remove(category);
+                _categoryRepository.Delete(category);   
             }
 
-             _context.SaveChanges();
+             //_context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CategoryExists(int id)
-        {
-            return _context.Categories.Any(e => e.Id == id);
-        }
+        //private bool CategoryExists(int id)
+        //{
+        //    return _context.Categories.Any(e => e.Id == id);
+        //}
     }
 }

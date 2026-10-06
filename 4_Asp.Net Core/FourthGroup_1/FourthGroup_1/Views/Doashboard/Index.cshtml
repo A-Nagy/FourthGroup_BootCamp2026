@@ -1,0 +1,44 @@
+﻿
+
+@{
+    ViewData["Title"] = "Dashbaord";
+}
+
+<h1>Welcome , @User.Identity?.Name</h1>
+<hr />
+<div class="row">
+    @if (User.HasClaim("Permission", PermissionsNames.EmployeeView))
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5>SHow All Employees Data</h5>
+                    <a asp-controller="Employees" asp-action="Index" class="btn btn-primary">Employees List</a>
+                </div>
+            </div>
+        </div>
+    }
+    @if (User.HasClaim("Permission", PermissionsNames.DepartmentView))
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5>SHow All Departments Data</h5>
+                    <a asp-controller="Departments" asp-action="Index" class="btn btn-primary">Departments List</a>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (User.IsInRole("Admin"))
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Adminstration</h5>
+                    <a asp-controller="Users" asp-action="Index" class="btn btn-primary">Users List</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
