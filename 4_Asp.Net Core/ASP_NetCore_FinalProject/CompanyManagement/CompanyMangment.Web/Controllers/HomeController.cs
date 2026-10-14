@@ -1,4 +1,5 @@
-using CompanyMangment.Web.Models;
+
+using CompanyMangment.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

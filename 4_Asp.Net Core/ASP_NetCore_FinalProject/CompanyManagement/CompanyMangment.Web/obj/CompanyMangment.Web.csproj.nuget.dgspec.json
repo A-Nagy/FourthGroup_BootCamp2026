@@ -171,9 +171,6 @@
             "projectReferences": {
               "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Application\\CompanyMangment.Application.csproj": {
                 "projectPath": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Application\\CompanyMangment.Application.csproj"
-              },
-              "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Domain\\CompanyMangment.Domain.csproj": {
-                "projectPath": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Domain\\CompanyMangment.Domain.csproj"
               }
             }
           }
@@ -193,6 +190,26 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.20, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -266,6 +283,30 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "BCrypt.Net-Core": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[9.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.20, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

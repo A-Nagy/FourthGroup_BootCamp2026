@@ -9,13 +9,20 @@
   <ItemGroup>
     <Folder Include="Persistence\Configrations\" />
     <Folder Include="Persistence\Migrations\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CompanyMangment.Application\CompanyMangment.Application.csproj" />
-    <ProjectReference Include="..\CompanyMangment.Domain\CompanyMangment.Domain.csproj" />
   </ItemGroup>
 
 </Project>

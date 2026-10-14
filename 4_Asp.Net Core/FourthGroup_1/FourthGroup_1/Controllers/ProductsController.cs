@@ -57,10 +57,14 @@ namespace FourthGroup_1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,Price,CategoryId")] Product product)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,Price,CategoryId")] Product product,IFormFile image)
         {
             if (ModelState.IsValid)
             {
+                if (image != null) 
+                {
+                    product.ImageUrl = UploadImage(image);
+                }
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -68,6 +72,27 @@ namespace FourthGroup_1.Controllers
             ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", product.CategoryId);
             return View(product);
         }
+
+        private string UploadImage(IFormFile image) 
+        {
+            string filename = Guid.NewGuid().ToString()+Path.GetExtension(image.FileName);
+            string folderpath = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot","images","products");
+                                             //https:www.hassan.com.sa/wwwroot/images/products/name.jpj
+           Directory.CreateDirectory(folderpath);
+            string filepath = Path.Combine(folderpath,filename);
+
+            using (var stream = new FileStream(filepath,FileMode.Create)) 
+            {
+                image.CopyTo(stream);
+            }
+
+            return "/images/products/" + filename;
+
+
+
+
+        }                                       
+
 
         // GET: Products/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -91,7 +116,7 @@ namespace FourthGroup_1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Price,CategoryId")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Price,CategoryId,ImageUrl")] Product product,IFormFile image)
         {
             if (id != product.Id)
             {
@@ -102,6 +127,11 @@ namespace FourthGroup_1.Controllers
             {
                 try
                 {
+
+                    if (image != null)
+                    {
+                        product.ImageUrl = UploadImage(image);
+                    }
                     _context.Update(product);
                     await _context.SaveChangesAsync();
                 }

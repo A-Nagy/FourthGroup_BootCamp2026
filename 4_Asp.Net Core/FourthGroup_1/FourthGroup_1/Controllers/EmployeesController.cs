@@ -14,19 +14,20 @@ namespace FourthGroup_1.Controllers
     [Authorize]
     public class EmployeesController : Controller
     {
-        //private readonly AppDbContext _dbContext;
+        private readonly AppDbContext _dbContext;
         //private readonly IRepository<Employee> _repository;
         // private readonly IEmployeeRepository _employeeRepository;
         // private readonly IRepository<Department> _DeptRepo;
         private readonly IUnitOfWork _unitOfWork;
 
-        public EmployeesController(IUnitOfWork unitOfWork)
+        public EmployeesController(IUnitOfWork unitOfWork, AppDbContext dbContext)
         {
             //    _dbContext = dbContext;
             //  _employeeRepository = employeeRepository;
             //_repository = repository;
             // _DeptRepo = DeptRepo;
             _unitOfWork = unitOfWork;
+            _dbContext = dbContext;
         }
 
         [HttpGet]
@@ -77,6 +78,7 @@ namespace FourthGroup_1.Controllers
             var employees = _unitOfWork.Employees.GetAllEmployeesWithDepartment();
             return View(employees);
         }
+      
 
         [HttpGet]
         public IActionResult Details(int Id)

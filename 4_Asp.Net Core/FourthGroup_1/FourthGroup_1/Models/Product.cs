@@ -14,6 +14,7 @@ namespace FourthGroup_1.Models
         [Required]
         [Range(10,5000)]
         public decimal Price { get; set; }
+        public string? ImageUrl { get; set; }
         public int? CategoryId { get; set; }
         public Category? Category { get; set; }
 

@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3AA29476-C898-416F-8400-F8CD2EBADEC0}|CompanyMangment.Application\\CompanyMangment.Application.csproj|h:\\bootcamp\\4-fourthgroup_bootcamp2026\\4_asp.net core\\asp_netcore_finalproject\\companymanagement\\companymangment.application\\dtos\\employeedtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AA29476-C898-416F-8400-F8CD2EBADEC0}|CompanyMangment.Application\\CompanyMangment.Application.csproj|solutionrelative:companymangment.application\\dtos\\employeedtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AA29476-C898-416F-8400-F8CD2EBADEC0}|CompanyMangment.Application\\CompanyMangment.Application.csproj|h:\\bootcamp\\4-fourthgroup_bootcamp2026\\4_asp.net core\\asp_netcore_finalproject\\companymanagement\\companymangment.application\\dtos\\departmentdtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AA29476-C898-416F-8400-F8CD2EBADEC0}|CompanyMangment.Application\\CompanyMangment.Application.csproj|solutionrelative:companymangment.application\\dtos\\departmentdtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC4B0505-BC0B-4E65-9A7F-9E45C24BA63F}|CompanyMangment.Infrastructure\\CompanyMangment.Infrastructure.csproj|h:\\bootcamp\\4-fourthgroup_bootcamp2026\\4_asp.net core\\asp_netcore_finalproject\\companymanagement\\companymangment.infrastructure\\repositories\\emoloyees\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC4B0505-BC0B-4E65-9A7F-9E45C24BA63F}|CompanyMangment.Infrastructure\\CompanyMangment.Infrastructure.csproj|solutionrelative:companymangment.infrastructure\\repositories\\emoloyees\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC4B0505-BC0B-4E65-9A7F-9E45C24BA63F}|CompanyMangment.Infrastructure\\CompanyMangment.Infrastructure.csproj|h:\\bootcamp\\4-fourthgroup_bootcamp2026\\4_asp.net core\\asp_netcore_finalproject\\companymanagement\\companymangment.infrastructure\\repositories\\users\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC4B0505-BC0B-4E65-9A7F-9E45C24BA63F}|CompanyMangment.Infrastructure\\CompanyMangment.Infrastructure.csproj|solutionrelative:companymangment.infrastructure\\repositories\\users\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC4B0505-BC0B-4E65-9A7F-9E45C24BA63F}|CompanyMangment.Infrastructure\\CompanyMangment.Infrastructure.csproj|h:\\bootcamp\\4-fourthgroup_bootcamp2026\\4_asp.net core\\asp_netcore_finalproject\\companymanagement\\companymangment.infrastructure\\repositories\\roles\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC4B0505-BC0B-4E65-9A7F-9E45C24BA63F}|CompanyMangment.Infrastructure\\CompanyMangment.Infrastructure.csproj|solutionrelative:companymangment.infrastructure\\repositories\\roles\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2619834-3CC8-4F1E-B1E9-77DA9D53CAD6}|CompanyManagement.API\\CompanyManagement.API.csproj|h:\\bootcamp\\4-fourthgroup_bootcamp2026\\4_asp.net core\\asp_netcore_finalproject\\companymanagement\\companymanagement.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2619834-3CC8-4F1E-B1E9-77DA9D53CAD6}|CompanyManagement.API\\CompanyManagement.API.csproj|solutionrelative:companymanagement.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42DB163-6AD6-4E71-86AD-9AC15A990B0C}|CompanyMangment.Web\\CompanyMangment.Web.csproj|h:\\bootcamp\\4-fourthgroup_bootcamp2026\\4_asp.net core\\asp_netcore_finalproject\\companymanagement\\companymangment.web\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42DB163-6AD6-4E71-86AD-9AC15A990B0C}|CompanyMangment.Web\\CompanyMangment.Web.csproj|solutionrelative:companymangment.web\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A42DB163-6AD6-4E71-86AD-9AC15A990B0C}|CompanyMangment.Web\\CompanyMangment.Web.csproj|h:\\bootcamp\\4-fourthgroup_bootcamp2026\\4_asp.net core\\asp_netcore_finalproject\\companymanagement\\companymangment.web\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A42DB163-6AD6-4E71-86AD-9AC15A990B0C}|CompanyMangment.Web\\CompanyMangment.Web.csproj|solutionrelative:companymangment.web\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +42,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 249,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DepartmentDto.cs",
+              "DocumentMoniker": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Application\\Dtos\\DepartmentDtos\\DepartmentDto.cs",
+              "RelativeDocumentMoniker": "CompanyMangment.Application\\Dtos\\DepartmentDtos\\DepartmentDto.cs",
+              "ToolTip": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Application\\Dtos\\DepartmentDtos\\DepartmentDto.cs",
+              "RelativeToolTip": "CompanyMangment.Application\\Dtos\\DepartmentDtos\\DepartmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T17:07:45.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeDto.cs",
+              "DocumentMoniker": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Application\\Dtos\\EmployeeDtos\\EmployeeDto.cs",
+              "RelativeDocumentMoniker": "CompanyMangment.Application\\Dtos\\EmployeeDtos\\EmployeeDto.cs",
+              "ToolTip": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Application\\Dtos\\EmployeeDtos\\EmployeeDto.cs",
+              "RelativeToolTip": "CompanyMangment.Application\\Dtos\\EmployeeDtos\\EmployeeDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T17:07:28.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Infrastructure\\Repositories\\Users\\UserRepository.cs",
+              "RelativeDocumentMoniker": "CompanyMangment.Infrastructure\\Repositories\\Users\\UserRepository.cs",
+              "ToolTip": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Infrastructure\\Repositories\\Users\\UserRepository.cs",
+              "RelativeToolTip": "CompanyMangment.Infrastructure\\Repositories\\Users\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T17:06:09.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Infrastructure\\Repositories\\Roles\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "CompanyMangment.Infrastructure\\Repositories\\Roles\\RoleRepository.cs",
+              "ToolTip": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Infrastructure\\Repositories\\Roles\\RoleRepository.cs",
+              "RelativeToolTip": "CompanyMangment.Infrastructure\\Repositories\\Roles\\RoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T17:06:05.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Infrastructure\\Repositories\\Emoloyees\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "CompanyMangment.Infrastructure\\Repositories\\Emoloyees\\EmployeeRepository.cs",
+              "ToolTip": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Infrastructure\\Repositories\\Emoloyees\\EmployeeRepository.cs",
+              "RelativeToolTip": "CompanyMangment.Infrastructure\\Repositories\\Emoloyees\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T17:05:57.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Web\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "CompanyMangment.Web\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Web\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "CompanyMangment.Web\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T17:04:00.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyManagement.API\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "CompanyManagement.API\\Controllers\\EmployeesController.cs",
+              "ToolTip": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyManagement.API\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "CompanyManagement.API\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T17:03:46.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Web\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "CompanyMangment.Web\\Controllers\\EmployeesController.cs",
+              "ToolTip": "H:\\Bootcamp\\4-FourthGroup_BootCamp2026\\4_Asp.Net Core\\ASP_NetCore_FinalProject\\CompanyManagement\\CompanyMangment.Web\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "CompanyMangment.Web\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T16:51:30.134Z",
+              "EditorCaption": ""
             }
           ]
         }

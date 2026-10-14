@@ -1,0 +1,16 @@
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\obj\Debug\net9.0\CompanyMangment.Application.csproj.AssemblyReference.cache
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\obj\Debug\net9.0\CompanyMangment.Application.GeneratedMSBuildEditorConfig.editorconfig
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\obj\Debug\net9.0\CompanyMangment.Application.AssemblyInfoInputs.cache
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\obj\Debug\net9.0\CompanyMangment.Application.AssemblyInfo.cs
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\obj\Debug\net9.0\CompanyMangment.Application.csproj.CoreCompileInputs.cache
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\obj\Debug\net9.0\CompanyMangment.Application.sourcelink.json
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\bin\Debug\net9.0\CompanyMangment.Application.deps.json
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\bin\Debug\net9.0\CompanyMangment.Application.dll
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\bin\Debug\net9.0\CompanyMangment.Application.pdb
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\bin\Debug\net9.0\CompanyMangment.Domain.dll
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\bin\Debug\net9.0\CompanyMangment.Domain.pdb
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\obj\Debug\net9.0\CompanyM.FE83532A.Up2Date
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\obj\Debug\net9.0\CompanyMangment.Application.dll
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\obj\Debug\net9.0\refint\CompanyMangment.Application.dll
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\obj\Debug\net9.0\CompanyMangment.Application.pdb
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Application\obj\Debug\net9.0\ref\CompanyMangment.Application.dll

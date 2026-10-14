@@ -1,0 +1,12 @@
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Domain\bin\Debug\net9.0\CompanyMangment.Domain.deps.json
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Domain\bin\Debug\net9.0\CompanyMangment.Domain.dll
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Domain\bin\Debug\net9.0\CompanyMangment.Domain.pdb
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Domain\obj\Debug\net9.0\CompanyMangment.Domain.GeneratedMSBuildEditorConfig.editorconfig
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Domain\obj\Debug\net9.0\CompanyMangment.Domain.AssemblyInfoInputs.cache
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Domain\obj\Debug\net9.0\CompanyMangment.Domain.AssemblyInfo.cs
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Domain\obj\Debug\net9.0\CompanyMangment.Domain.csproj.CoreCompileInputs.cache
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Domain\obj\Debug\net9.0\CompanyMangment.Domain.sourcelink.json
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Domain\obj\Debug\net9.0\CompanyMangment.Domain.dll
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Domain\obj\Debug\net9.0\refint\CompanyMangment.Domain.dll
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Domain\obj\Debug\net9.0\CompanyMangment.Domain.pdb
+H:\Bootcamp\4-FourthGroup_BootCamp2026\4_Asp.Net Core\ASP_NetCore_FinalProject\CompanyManagement\CompanyMangment.Domain\obj\Debug\net9.0\ref\CompanyMangment.Domain.dll

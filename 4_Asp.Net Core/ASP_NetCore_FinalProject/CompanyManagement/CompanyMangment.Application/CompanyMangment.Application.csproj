@@ -7,14 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstractions\Services\" />
-    <Folder Include="Abstractions\Repostories\" />
-    <Folder Include="Dtos\" />
-    <Folder Include="Security\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CompanyMangment.Domain\CompanyMangment.Domain.csproj" />
   </ItemGroup>
 

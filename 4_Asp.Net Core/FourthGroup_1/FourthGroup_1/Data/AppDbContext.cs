@@ -17,6 +17,7 @@ namespace FourthGroup_1.Data
         public DbSet<Role> Roles { get; set; }
         public DbSet<Permission> Permissions { get; set; }
 
+
     }
 }
    

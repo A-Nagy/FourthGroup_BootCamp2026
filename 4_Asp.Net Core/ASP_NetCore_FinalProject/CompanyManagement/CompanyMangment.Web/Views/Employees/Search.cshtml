@@ -1,0 +1,11 @@
+﻿ @model Employee
+ @{
+    ViewData["Title"] = "Search about Employee";
+ }
+<h1 class="text-center"> @ViewData["Title"]</h1>
+<form asp-action="Search" method="post">
+    <label> Phone : </label>
+    <input asp-for="Phone" type="tel" name="Phone" id="Phone" placeholder="Search By Phone"/>
+    <br />    <br />
+        <button type="submit" class="btn btn-success">Search</button>
+</form>
