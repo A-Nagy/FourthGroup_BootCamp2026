@@ -58,8 +58,7 @@
               "RelativeToolTip": "CompanyMangment.Application\\Dtos\\DepartmentDtos\\DepartmentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T17:07:45.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T17:07:45.415Z"
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "CompanyMangment.Infrastructure\\Repositories\\Users\\UserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T17:06:09.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T17:06:09.91Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "CompanyMangment.Infrastructure\\Repositories\\Roles\\RoleRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T17:06:05.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T17:06:05.845Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "CompanyMangment.Infrastructure\\Repositories\\Emoloyees\\EmployeeRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T17:05:57.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T17:05:57.382Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "CompanyMangment.Web\\Controllers\\DepartmentsController.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T17:04:00.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T17:04:00.453Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "CompanyManagement.API\\Controllers\\EmployeesController.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAgwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T17:03:46.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T17:03:46.839Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "CompanyMangment.Web\\Controllers\\EmployeesController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T16:51:30.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-14T16:51:30.134Z"
             }
           ]
         }
